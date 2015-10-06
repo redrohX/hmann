@@ -29,6 +29,7 @@ body {
       width: 100%;
       background: #ddd;
       min-height: 350px;
+      overflow: hidden;
 
       @media only screen and (min-width: 771px) {
         float: left;
@@ -53,8 +54,12 @@ body {
     .widget01--container--more-info {
       background: #aea276;
 
-      .container-02-image {
+      .widget01--container--more-info--image {
+        background-color: #fff;
         background-size: cover;
+        background-repeat: no-repeat;
+        top: -300px;
+        opacity: 0;
       }
     }
 
@@ -68,6 +73,7 @@ body {
     }
 
     .widget01--block {
+      position: relative;
       min-height: 175px;
 
       @media only screen and (min-width: 771px) {
