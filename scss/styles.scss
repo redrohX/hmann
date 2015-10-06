@@ -63,7 +63,16 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         top: -300px;
-        opacity: 0;
+        opacity: 1;
+
+        > div {
+          opacity: 0;
+
+          &.is-visible {
+           opacity: 1;
+           transition: opacity 0.5s ease-in-out;
+         }
+        }
       }
     }
 
@@ -93,7 +102,7 @@ body {
       opacity: 0;
 
       @media only screen and (min-width: 771px) {
-        bottom: 90px;
+        bottom: 40px;
       }
     }
 
