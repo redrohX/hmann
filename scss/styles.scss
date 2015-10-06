@@ -1,0 +1,109 @@
+@import "normalize";
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #eee;
+  font-size: 16px;
+}
+
+.header--wrapper {
+  margin: 0;
+  padding: 1em;
+  background: #fff;
+  text-align: center;
+}
+
+.widget-dummy {
+  padding: 40em 0;
+}
+
+.widget01 {
+    .widget01--container {
+      position: relative;
+      width: 100%;
+      background: #ddd;
+      min-height: 350px;
+
+      @media only screen and (min-width: 771px) {
+        float: left;
+        width: 50%;
+        min-height: 700px;
+        background-size: cover;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        width: 25%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .widget01--container--default {
+
+    }
+
+    .widget01--container--more-info {
+      background: #aea276;
+
+      .container-02-image {
+        background-size: cover;
+      }
+    }
+
+    .widget01--container--swipe {
+      background: #dbd7c7;
+      color: #000;
+    }
+
+    .widget01--container--cta {
+      background: #fff;
+    }
+
+    .widget01--block {
+      min-height: 175px;
+
+      @media only screen and (min-width: 771px) {
+        min-height: 350px;
+      }
+    }
+
+    .widget01--heading-wrapper {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+
+      @media only screen and (min-width: 771px) {
+        bottom: 90px;
+      }
+    }
+
+    .widget01--subtitle {
+      color: #fff;
+      font-weight: 100;
+      border-top: 1px solid white;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+
+    .widget01--header {
+      padding: 1rem 0 0;
+      margin: 0;
+      color: #fff;
+
+
+      text-transform: uppercase;
+      letter-spacing: 0.75rem;
+      font-size: 32px;
+    }
+}
