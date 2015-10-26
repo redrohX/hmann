@@ -227,13 +227,7 @@ body {
     .row-1 {
       min-height: 397px;
       background-size: cover;
-
-      @media only screen and (max-width: 1000px) {
-          min-height: inherit;
-          display: table;
-        }
     }
-
     .overlay-container {
         width: 25%;
         position: absolute;
@@ -244,7 +238,6 @@ body {
         @media only screen and (max-width: 1000px) {
           width: 100%;
           left: 0;
-          position: relative;
         }
 
         h3 {
@@ -255,19 +248,38 @@ body {
         .container-2 {
             width: 100%;
             min-height: 265px;
-
-            @media only screen and (max-width: 1000px) {
-              width: 50%;
-              float: left;
-            }
         }
 
         .container-1 {
             background: #FFFFFF;
             height: 380px;
+            position: relative;
 
             -webkit-transition: height ease-in 0.4s; /* Safari */
             transition: height ease-in 0.4s;
+
+            @media only screen and (max-width: 1000px) {
+                width: 50%;
+                float: left;
+                height: 397px;
+                max-width: 397px;
+            }
+
+            @media only screen and (max-width: 545px) {
+                width: 100%;
+                float: left;
+                height: 397px;
+                max-width: 100%;
+            }
+
+            .close {
+                position: absolute;
+                top: -110px;
+                right: 10px;
+
+                color: #ccc;
+                text-decoration: no-underline;
+            }
 
             .cont {
                 text-align: center;
@@ -275,13 +287,24 @@ body {
                 line-height: 380px;
 
                 &.collapse {
-                    height: 685px;
-                    line-height: 685px;
+                    height: 715px;
+                    line-height: 715px;
 
                     -webkit-transition: height ease-out 0.75s; /* Safari */
                     -webkit-transition: line-height ease-out 0.75s; /* Safari */
                     transition: height ease-out 0.75s;
                     transition: line-height ease-out 0.75s;
+                }
+
+                &.flipped {
+                    line-height: normal;
+
+                    .front {
+                        opacity: 0;
+
+                        -webkit-transition: opacity ease-out 0.25s; /* Safari */
+                        transition: opacity ease-out 0.25s;
+                    }
                 }
             }
 
@@ -297,15 +320,16 @@ body {
             }
 
             &.collapse {
-                height: 685px;
+                height: 715px;
 
                 -webkit-transition: height ease-out 0.75s; /* Safari */
                 transition: height ease-out 0.75s;
             }
+        }
 
-            .back {
-                position: absolute;
-                margin-top: -100px;
+        .container-2 {
+            @media only screen and (max-width: 1000px) {
+                display: none;
             }
         }
     }
@@ -319,6 +343,7 @@ body {
     background: #FFFFFF;
     width: 100%;
     display: table;
+    min-height: 295px;
 
     .text-block-1,
     .text-block-2 {
@@ -326,6 +351,12 @@ body {
         width: 20%;
         float: right;
         padding-right: 10px;
+
+        @media only screen and (max-width: 1000px) {
+            width: 45%;
+            float: left;
+            padding: 5px;
+        }
 
         strong {
             text-transform: uppercase;
@@ -389,6 +420,10 @@ button.button-prim {
     background-color: #fff;
     color: #444;
     cursor: default;
+}
+
+.mdl-textfield.mdl-js-textfield {
+    width: 70%;
 }
 
 @media screen and (min-width: 600px) {
