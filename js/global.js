@@ -1,6 +1,10 @@
 $(document).ready(function($) {
     var prevent = $(".button-prim");
+    var prevent2 = $(".close");
     prevent.click(function(e) {
+        e.preventDefault();
+    });
+    prevent2.click(function(e) {
         e.preventDefault();
     });
 
@@ -32,12 +36,16 @@ $(document).ready(function($) {
             element.animation = tl;
         });
 
-        $("div.cont.test").hover(elOver, elOut);
+        $("div.cont.test").click(elOver);
 
         function elOver()
         {
             this.animation.play();
+            $(".cont").addClass('flipped');
+            $(".button-prim").hide();
         }
+
+        $("div.cont.test").find('.close').click(elOut);
 
         function elOut()
         {
