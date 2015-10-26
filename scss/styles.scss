@@ -13,7 +13,7 @@ body {
 
   h2, h3 {
         margin: 0;
-  }
+    }
 }
 
 .header--wrapper {
@@ -131,46 +131,88 @@ body {
     position: relative;
     overflow: hidden;
 
+    .row-1 {
+      min-height: 397px;
+      background-size: cover;
+
+      @media only screen and (max-width: 1000px) {
+          min-height: inherit;
+          display: table;
+        }
+    }
+
     .overlay-container {
-        width: 30%;
+        width: 25%;
         position: absolute;
         top: -400px;
         left: 10%;
         opacity: 0;
 
-        .container {
-            position: relative;
+        @media only screen and (max-width: 1000px) {
+          width: 100%;
+          left: 0;
+          position: relative;
+        }
 
-            h3 {
-                text-transform: uppercase;
+        h3 {
+            text-transform: uppercase;
+        }
+
+        .container-1,
+        .container-2 {
+            width: 100%;
+            min-height: 265px;
+
+            @media only screen and (max-width: 1000px) {
+              width: 50%;
+              float: left;
             }
+        }
 
-            .container-1,
-            .container-2 {
-                width: 100%;
-                min-height: 265px;
-            }
+        .container-1 {
+            background: #FFFFFF;
+            height: 380px;
 
-            .container-1 {
-                background: #FFFFFF;
-                display: table-cell;
-                vertical-align: middle;
+            -webkit-transition: height ease-in 0.4s; /* Safari */
+            transition: height ease-in 0.4s;
+
+            .cont {
                 text-align: center;
-                height: 335px;
-
-                -webkit-transition: height ease-in 0.4s; /* Safari */
-                transition: height ease-in 0.4s;
-
-                .text {
-                    margin: 0 60px 50px;
-                }
+                height: 380px;
+                line-height: 380px;
 
                 &.collapse {
                     height: 685px;
+                    line-height: 685px;
 
                     -webkit-transition: height ease-out 0.75s; /* Safari */
+                    -webkit-transition: line-height ease-out 0.75s; /* Safari */
                     transition: height ease-out 0.75s;
+                    transition: line-height ease-out 0.75s;
                 }
+            }
+
+            .text {
+                display: inline-block;
+                vertical-align: middle;
+
+                line-height: normal;
+
+                .button-prim  {
+                    margin-top: 50px;
+                }
+            }
+
+            &.collapse {
+                height: 685px;
+
+                -webkit-transition: height ease-out 0.75s; /* Safari */
+                transition: height ease-out 0.75s;
+            }
+
+            .back {
+                position: absolute;
+                margin-top: -100px;
             }
         }
     }
