@@ -7,6 +7,7 @@ $(document).ready(function($) {
     var show = $(".show-more");
     show.click(function()  {
         $(".container-1").toggleClass('collapse');
+        $(".cont").toggleClass('collapse');
         $(".cont").toggleClass('test');
 
         functionOne();
