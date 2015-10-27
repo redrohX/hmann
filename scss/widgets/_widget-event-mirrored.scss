@@ -1,0 +1,138 @@
+.widget-04 {
+    position: relative;
+    overflow: hidden;
+
+    .row-1 {
+        min-height: 397px;
+        background-size: cover;
+    }
+
+    .container-1,
+    .container-2 {
+        width: 100%;
+        min-height: 265px;
+    }
+
+    .overlay-container-1 {
+        width: 25%;
+        position: absolute;
+        top: -400px;
+        right: 10%;
+        opacity: 0;
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            left: 0;
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        .container-1 {
+            background: #FFFFFF;
+            height: 380px;
+            position: relative;
+
+            -webkit-transition: height ease-in 0.4s; /* Safari */
+            transition: height ease-in 0.4s;
+
+            @media only screen and (max-width: 1000px) {
+                width: 50%;
+                float: left;
+                height: 397px;
+                max-width: 397px;
+            }
+
+            @media only screen and (max-width: 545px) {
+                width: 100%;
+                float: left;
+                height: 397px;
+                max-width: 100%;
+            }
+
+            .cont {
+                text-align: center;
+                height: 380px;
+                line-height: 380px;
+
+                &.collapse {
+                    height: 715px;
+                    line-height: 715px;
+
+                    -webkit-transition: height ease-out 0.75s; /* Safari */
+                    -webkit-transition: line-height ease-out 0.75s; /* Safari */
+                    transition: height ease-out 0.75s;
+                    transition: line-height ease-out 0.75s;
+                }
+
+                &.flipped {
+                    line-height: normal;
+
+                    .front {
+                        opacity: 0;
+
+                        -webkit-transition: opacity ease-out 0.25s; /* Safari */
+                        transition: opacity ease-out 0.25s;
+                    }
+                }
+            }
+
+
+            .text {
+                display: inline-block;
+                vertical-align: middle;
+
+                line-height: normal;
+
+                .button-prim  {
+                    margin-top: 50px;
+                }
+            }
+
+            &.collapse {
+                height: 715px;
+
+                -webkit-transition: height ease-out 0.75s; /* Safari */
+                transition: height ease-out 0.75s;
+            }
+        }
+    }
+
+    .overlay-container-2 {
+        width: 25%;
+        position: absolute;
+        bottom: -400px;
+        right: 10%;
+        opacity: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .row-2 {
+        background: #FFFFFF;
+        width: 100%;
+        display: table;
+        min-height: 295px;
+
+        .text-block-1,
+        .text-block-2 {
+            height: 272px;
+            width: 20%;
+            float: right;
+            padding-right: 10px;
+
+            @media only screen and (max-width: 1000px) {
+                width: 45%;
+                float: left;
+                padding: 5px;
+            }
+
+            strong {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
