@@ -60,6 +60,26 @@ button {
 	width: 100%;
 }
 
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #d1cbbf;
+}
+
+:-moz-placeholder {
+    color: #d1cbbf;
+}
+
+::-moz-placeholder {
+    color: #d1cbbf;
+}
+
+:-ms-input-placeholder {
+    color: #d1cbbf;
+}
+
 //BUTTONS
 
 .button-sec {
@@ -124,7 +144,24 @@ button.button-prim {
 }
 
 .mdl-textfield.mdl-js-textfield {
-    width: 70%;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+
+    input {
+        border: 0;
+        line-height: 1.80em;
+        width: 100%;
+
+        border-bottom: 2px solid #aea278;
+
+        &:focus {
+            border-bottom: 2px solid #052ea0;
+
+            -webkit-transition: border ease-in 0.8s; /* Safari */
+            transition: border ease-in 0.8s;
+        }
+    }
 }
 
 @media screen and (min-width: 600px) {

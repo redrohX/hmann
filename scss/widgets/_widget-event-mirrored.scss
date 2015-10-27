@@ -3,7 +3,8 @@
     overflow: hidden;
 
     .row-1 {
-        min-height: 397px;
+        width: 100%;
+        min-height: 450px;
         background-size: cover;
     }
 
@@ -27,11 +28,27 @@
 
         h3 {
             text-transform: uppercase;
+            letter-spacing: 0.20em;
+
+            &.title {
+                color: #b0a377;
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 25px;
+            }
+
+            &.text {
+                font-weight: 500;
+                letter-spacing: 0.10em;
+                text-transform: none;
+                font-size: 27px;
+                width: 100%;
+                margin-bottom: 80px;
+            }
         }
 
         .container-1 {
             background: #FFFFFF;
-            height: 380px;
             position: relative;
 
             -webkit-transition: height ease-in 0.4s; /* Safari */
@@ -53,29 +70,8 @@
 
             .cont {
                 text-align: center;
-                height: 380px;
-                line-height: 380px;
-
-                &.collapse {
-                    height: 715px;
-                    line-height: 715px;
-
-                    -webkit-transition: height ease-out 0.75s; /* Safari */
-                    -webkit-transition: line-height ease-out 0.75s; /* Safari */
-                    transition: height ease-out 0.75s;
-                    transition: line-height ease-out 0.75s;
-                }
-
-                &.flipped {
-                    line-height: normal;
-
-                    .front {
-                        opacity: 0;
-
-                        -webkit-transition: opacity ease-out 0.25s; /* Safari */
-                        transition: opacity ease-out 0.25s;
-                    }
-                }
+                height: 280px;
+                line-height: 280px;
             }
 
 
@@ -102,7 +98,7 @@
     .overlay-container-2 {
         width: 25%;
         position: absolute;
-        bottom: -400px;
+        bottom: -350px;
         right: 10%;
         opacity: 0;
     }
@@ -115,7 +111,7 @@
         background: #FFFFFF;
         width: 100%;
         display: table;
-        min-height: 295px;
+        min-height: 155px;
 
         .text-block-1,
         .text-block-2 {
