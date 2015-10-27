@@ -35,7 +35,7 @@ var tween_scene = new ScrollMagic.Scene({
 })
 .setTween(tween) // trigger a TweenMax.to tween
 .triggerHook(1)
-.addIndicators({name: "1 - move text"}) // add indicators (requires plugin)
+//.addIndicators({name: "1 - move text"}) // add indicators (requires plugin)
 .addTo(controller);
 
 // build scene
@@ -45,7 +45,7 @@ var grow_scene = new ScrollMagic.Scene({
 })
 .setTween(grow) // trigger a TweenMax.to tween
 .triggerHook(1)
-.addIndicators({name: "2 - move photo"}) // add indicators (requires plugin)
+//.addIndicators({name: "2 - move photo"}) // add indicators (requires plugin)
 .on('start', function (event) {
   showImage($('.widget01--container--more-info--image'));
 })

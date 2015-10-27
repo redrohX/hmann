@@ -96,6 +96,16 @@ button {
   }
 }
 
+.widget-slider {
+  .widget-slider-container {
+    min-height: 700px;
+  }
+  .widget-slider--content {
+    background-size: cover;
+    min-height: 700px;
+  }
+}
+
 .widget01 {
     .widget01--container {
       position: relative;
@@ -217,7 +227,7 @@ button {
 
       .widget01--container--cta--image {
         bottom: -100px;
-         
+
         > div {
           min-height: 350px;
         }
