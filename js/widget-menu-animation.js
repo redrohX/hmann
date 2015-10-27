@@ -26,9 +26,6 @@ var grow = TweenMax.to(['#animate3'], 0.5, {
   //ease: Linear.easeNone
 });
 
-// init controller
-var controller = new ScrollMagic.Controller();
-
 // build scene
 var tween_scene = new ScrollMagic.Scene({
   triggerElement: "#trigger1"
