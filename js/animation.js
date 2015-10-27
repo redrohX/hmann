@@ -1,4 +1,4 @@
-var test = function (el) {
+var showImage = function (el) {
   var el = el.find('> div'),
       image = el.data('src');
   setTimeout(function () {
@@ -12,7 +12,7 @@ var test = function (el) {
 
 // Tween Animation Setup
 // .to('@target', @length, {@object})
-var tween = TweenMax.to(['#animate1', '#animate2'], 0.5, {
+var tween = TweenMax.to(['#animate1', '#animate2', '#animate4'], 0.5, {
   alpha: 1,
   y: -100,
   // ease: Linear.easeNone
@@ -47,6 +47,6 @@ var grow_scene = new ScrollMagic.Scene({
 .triggerHook(1)
 .addIndicators({name: "2 - move photo"}) // add indicators (requires plugin)
 .on('start', function (event) {
-  test($('.widget01--container--more-info--image'));
+  showImage($('.widget01--container--more-info--image'));
 })
 .addTo(controller);

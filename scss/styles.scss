@@ -16,6 +16,17 @@ body {
     }
 }
 
+button {
+  border: 1px solid white;
+  color: white;
+  font-weight: 100;
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .header--wrapper {
   margin: 0;
   padding: 1em;
@@ -25,6 +36,10 @@ body {
 
 .widget-dummy {
   padding: 40em 0;
+}
+
+.slideshow-container {
+  background: #000;
 }
 
 .slideshow {
@@ -66,8 +81,8 @@ body {
   user-select: none;
 
   span {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     color: #ddd;
     cursor: pointer;
@@ -165,7 +180,57 @@ body {
     }
 
     .widget01--container--cta {
-      background: #fff;
+      background: #e7e2cf;
+
+      .widget01--block {
+        text-align: center;
+      }
+
+      .content-container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .widget01--subtitle {
+        color: #b0a377;
+        font-weight: normal;
+        border-color: inherit;
+      }
+
+      .widget01--header {
+        color: #000;
+        font-size: 16px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        padding-bottom: 2px;
+        margin-top: 6px;
+      }
+
+      .widget01--button {
+        color: #b0a377;
+        border-color: inherit;
+        margin-top: 16px;
+      }
+
+      .widget01--container--cta--image {
+        bottom: -100px;
+         
+        > div {
+          min-height: 350px;
+        }
+      }
+
+      > div {
+        opacity: 1;
+
+        &.is-visible {
+         opacity: 1;
+         transition: opacity 0.5s ease-in-out;
+       }
+      }
     }
 
     .widget01--block {
@@ -185,10 +250,10 @@ body {
     .widget01--subtitle {
       color: #fff;
       font-weight: 100;
-      border-top: 1px solid white;
+      border-bottom: 1px solid white;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      padding-top: 10px;
+      padding-bottom: 2px;
 
       &-alt {
         text-align: center;
