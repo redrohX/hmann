@@ -12,6 +12,10 @@ body {
   h2, h3 {
         margin: 0;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 button {
@@ -20,7 +24,7 @@ button {
   font-weight: 100;
   padding: 10px 20px;
   font-size: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.20em;
   cursor: pointer;
   background-color: transparent;
 }
@@ -33,6 +37,10 @@ button {
             width: 50%;
         }
     }
+}
+
+.dash {
+    color: #b0a377;
 }
 
 .header--wrapper {
@@ -57,8 +65,14 @@ button {
 
 a.button-prim,
 button.button-prim {
-    border: 1px solid orange;
-    background: white;
+    border: 1px solid #b0a377;
+    color: #b0a377;
+    font-weight: 100;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .cont {
