@@ -1,6 +1,4 @@
 .widget01 {
-  margin: 120px 0;
-  
   @include clearfix;
     .widget01--container {
       position: relative;
@@ -82,10 +80,13 @@
         color: #756d4f;
       }
 
+      .slideshow-pager {
+        bottom: 140px;
+        top: auto;
+      }
+
       .slideshow-nav {
-        position: absolute;
         bottom: 20px;
-        z-index: 115;
         transform: translate(-50%, -50%);
         left: 50%;
         border: 1px solid white;
@@ -94,7 +95,6 @@
         padding: 10px 20px;
         font-size: 14px;
         letter-spacing: 0.05em;
-        cursor: pointer;
       }
     }
 

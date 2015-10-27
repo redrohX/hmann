@@ -1,11 +1,42 @@
 .widget-slider {
-  margin: 0 0 120px 0;
-  
+  .heading-wrapper {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .widget-slider--header,
+  .widget-slider--subtitle {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .widget-slider--header {
+    font-size: 52px;
+  }
+
+  .widget-slider--subtitle {
+    display: inline-block;
+    border-top: 1px solid #9c7a4c;
+    padding-top: 10px;
+    margin-top: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
   .widget-slider-container {
     min-height: 700px;
   }
+
   .widget-slider--content {
     background-size: cover;
     min-height: 700px;
+  }
+
+  .slideshow-pager {
+    bottom: 30px;
   }
 }
