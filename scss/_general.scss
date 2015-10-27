@@ -25,6 +25,16 @@ button {
   background-color: transparent;
 }
 
+.logo {
+    img {
+        width: 30%;
+
+        @media screen and (max-width: 600px) {
+            width: 50%;
+        }
+    }
+}
+
 .header--wrapper {
   margin: 0;
   padding: 1em;
@@ -64,7 +74,6 @@ button.button-prim {
 
 .nav ul {
     list-style: none;
-    background-color: #444;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -79,17 +88,17 @@ button.button-prim {
 
 .nav a {
     text-decoration: none;
-    color: #fff;
+    text-transform: uppercase;
+    color: #000;
     display: block;
     transition: .3s background-color;
 }
 
 .nav a:hover {
-    background-color: #005f5f;
+    border-bottom: 2px solid #000;
 }
 
 .nav a.active {
-    background-color: #fff;
     color: #444;
     cursor: default;
 }
@@ -100,11 +109,11 @@ button.button-prim {
 
 @media screen and (min-width: 600px) {
     .nav li {
-        width: 120px;
         border-bottom: none;
         height: 50px;
         line-height: 50px;
-        font-size: 1.4em;
+        font-size: 14px;
+        padding: 0 30px;
     }
 
     /* Option 1 - Display Inline */
