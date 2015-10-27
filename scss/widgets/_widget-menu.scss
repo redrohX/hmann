@@ -1,17 +1,18 @@
 .widget01 {
+  margin: 120px 0;
+  
   @include clearfix;
     .widget01--container {
       position: relative;
       width: 100%;
-      background: #ddd;
       min-height: 350px;
       overflow: hidden;
+      background-size: cover;
 
       @media only screen and (min-width: 771px) {
         float: left;
         width: 50%;
         min-height: 700px;
-        background-size: cover;
       }
 
       @media only screen and (min-width: 1024px) {
@@ -51,13 +52,13 @@
       }
 
       .widget01--container--more-info--image {
-        background-color: #fff;
-        background-size: cover;
-        background-repeat: no-repeat;
         top: -300px;
         opacity: 1;
 
         > div {
+          background-color: #fff;
+          background-size: cover;
+          background-repeat: no-repeat;
           opacity: 0;
 
           &.is-visible {
@@ -138,6 +139,9 @@
 
         > div {
           min-height: 350px;
+          background-color: #fff;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
       }
 
