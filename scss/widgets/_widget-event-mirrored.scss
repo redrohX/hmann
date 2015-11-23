@@ -21,7 +21,7 @@
 
     .overlay-container-1 {
         top: -400px;
-        max-height: 350px;
+        min-height: 350px;
         position: relative;
         opacity: 0;
 
@@ -103,7 +103,7 @@
     .overlay-container-2 {
         bottom: -350px;
         opacity: 0;
-        max-height: 350px;
+        min-height: 350px;
         position: relative;
     }
 
