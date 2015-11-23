@@ -54,4 +54,10 @@ $(document).ready(function () {
             next: '.widget-slider .slideshow-next',
             fx: 'scrollHorz'
         });
+
+      $( '.widget-slider .slideshow-container' ).on( 'cycle-update-view', function(event, optionHash, slideOptionsHash, currentSlideEl) {
+        if ( $('video', currentSlideEl)[0] ) {
+          $('video', currentSlideEl)[0].play();
+        }
+      });
 });
