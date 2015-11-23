@@ -14,11 +14,15 @@
         min-height: 265px;
     }
 
-    .overlay-container-1 {
-        width: 25%;
+    .overlay {
         position: absolute;
-        top: -400px;
         right: 10%;
+    }
+
+    .overlay-container-1 {
+        top: -400px;
+        max-height: 350px;
+        position: relative;
         opacity: 0;
 
         @media only screen and (max-width: 1000px) {
@@ -97,11 +101,10 @@
     }
 
     .overlay-container-2 {
-        width: 25%;
-        position: absolute;
         bottom: -350px;
-        right: 10%;
         opacity: 0;
+        max-height: 350px;
+        position: relative;
     }
 
     img {
