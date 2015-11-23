@@ -145,21 +145,11 @@ button.button-prim {
 .mdl-textfield.mdl-js-textfield {
     width: 80%;
     max-width: 400px;
-    margin: 10px auto;
+    margin: -15px auto;
 
     input {
-        border: 0;
         line-height: 1.80em;
         width: 100%;
-
-        border-bottom: 2px solid #aea278;
-
-        &:focus {
-            border-bottom: 2px solid #052ea0;
-
-            -webkit-transition: border ease-in 0.8s; /* Safari */
-            transition: border ease-in 0.8s;
-        }
     }
 }
 
