@@ -1,4 +1,6 @@
-.widget-slider {  
+.widget-slider {
+  position: relative;
+
   .heading-wrapper {
     position: absolute;
     bottom: 0;
@@ -6,6 +8,7 @@
     width: 100%;
     text-align: center;
     letter-spacing: 0.03em;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
   }
 
   .widget-slider--header,
@@ -36,8 +39,23 @@
   }
 
   .widget-slider--content {
+    position: relative;
     background-size: cover;
     min-height: 700px;
+    max-height: 700px;
+    overflow: hidden;
+
+    .widget-slider--video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      transform: translateX(0) translateY(0);
+      bottom: 0;
+      right: 0;
+    }
   }
 
   .slideshow-pager {
