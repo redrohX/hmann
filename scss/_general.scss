@@ -1,3 +1,8 @@
+html, body, .wrapper {
+  height: 91%;
+  margin: 0;
+}
+
 html {
   font-size: 16.5%;
 }
@@ -8,7 +13,6 @@ body {
   margin: 0;
   background: #fff;
   font-size: 16px;
-  height: 100%;
 
   h1, h2, h3 {
         margin: 0;
@@ -32,16 +36,12 @@ button {
 
 .logo {
     img {
-        width: 30%;
+        max-width: 400px;
 
         @media screen and (max-width: 600px) {
             width: 50%;
         }
     }
-}
-
-.wrapper {
-  height: 100%;
 }
 
 .dash {
@@ -53,11 +53,14 @@ button {
   padding: 1em 1em 0;
   background: #fff;
   text-align: center;
+  z-index: 1001;
 }
 
 .widget {
   height: 100%;
 	width: 100%;
+  border: 2em solid white;
+  background: white;
 }
 
 textarea:focus, input:focus{
@@ -112,6 +115,10 @@ button.button-prim {
     -ms-backface-visibility: hidden;
 }
 
+.nav {
+  padding: 20px 0 0;
+}
+
 .nav ul {
     list-style: none;
     text-align: center;
@@ -120,8 +127,7 @@ button.button-prim {
 }
 .nav li {
     font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
+    line-height: 2;
     border-bottom: 1px solid #888;
 }
 
@@ -131,10 +137,15 @@ button.button-prim {
     color: #000;
     display: block;
     transition: .3s background-color;
+
+    &::after {
+      content: '';
+      border-bottom: 2px solid #000;
+    }
 }
 
 .nav a:hover {
-    border-bottom: 2px solid #000;
+    text-decoration: underline;
 }
 
 .nav a.active {
@@ -156,8 +167,7 @@ button.button-prim {
 @media screen and (min-width: 600px) {
     .nav li {
         border-bottom: none;
-        height: 50px;
-        line-height: 50px;
+        line-height: 2;
         font-size: 14px;
         padding: 0 30px;
     }

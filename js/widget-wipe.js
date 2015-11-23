@@ -8,6 +8,7 @@ for (var i = 0; i < slides.length; i++) {
       triggerElement: slides[i]
   })
   .setPin(slides[i])
-  .addIndicators() // add indicators (requires plugin)
-  .addTo(controller);
+  .addIndicators({name: "widget-wipe"}) // add indicators (requires plugin)
+  .addTo(controller)
+  .offset(-50);
 }
