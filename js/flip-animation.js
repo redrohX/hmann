@@ -11,8 +11,8 @@ $(document).ready(function($) {
     var show = $(".show-more");
     show.click(function()  {
         $(".container-1").toggleClass('collapse');
-        $(".cont").toggleClass('collapse');
-        $(".cont").toggleClass('test');
+        $(".widget-03").find(".cont").toggleClass('collapse');
+        $(".widget-03").find(".cont").toggleClass('test');
 
         functionOne();
     });
@@ -42,7 +42,7 @@ $(document).ready(function($) {
         {
             this.animation.play();
             $(".cont").addClass('flipped');
-            $(".button-prim").hide();
+            $(".widget-03").find(".button-prim").hide();
         }
 
         $("div.cont.test").find('.close').click(elOut);
