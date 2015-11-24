@@ -1,19 +1,17 @@
 .widget-04 {
     position: relative;
     overflow: hidden;
-    margin-bottom: 15%;
-    padding-bottom: 15%;
+    min-height: 700px;
 
     .row-1 {
         width: 100%;
-        min-height: 450px;
+        min-height: 580px;
         background-size: cover;
     }
 
     .cont-1,
     .cont-2 {
         width: 100%;
-        min-height: 265px;
     }
 
     .overlay {
@@ -36,10 +34,10 @@
     }
 
     .overlay-container-1 {
-        top: -400px;
-        min-height: 350px;
+        background: #fff;
+        top: -100px;
+        max-height: 350px;
         position: relative;
-        opacity: 0;
 
         @media only screen and (max-width: 1000px) {
             width: 100%;
@@ -49,6 +47,9 @@
         h3 {
             text-transform: uppercase;
             letter-spacing: 0.15em;
+            margin-bottom: 100px;
+            font-weight: normal;
+            font-size: 22px;
 
             &.title {
                 color: #b0a377;
@@ -68,7 +69,6 @@
         }
 
         .cont-1 {
-            background: #FFFFFF;
             position: relative;
 
             -webkit-transition: height ease-in 0.4s; /* Safari */
@@ -84,16 +84,12 @@
             .cont {
                 text-align: center;
                 height: 390px;
-                line-height: 390px;
             }
 
 
             .text {
-                display: inline-block;
-                vertical-align: middle;
+                padding: 60px 0 0 0;
                 text-transform: uppercase;
-
-                line-height: normal;
 
                 .button-prim  {
                     margin-top: 50px;
@@ -113,8 +109,7 @@
     }
 
     .overlay-container-2 {
-        bottom: -350px;
-        opacity: 0;
+        bottom: -100px;
         min-height: 350px;
         position: relative;
     }
