@@ -161,6 +161,10 @@ button.button-prim {
         line-height: 1.80em;
         width: 100%;
     }
+
+    &.last {
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (min-width: 600px) {
