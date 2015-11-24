@@ -31,6 +31,6 @@ $(function() {
 
 var headerAnim = new TimelineLite({paused:true});
 headerAnim.to(".nav", 1, {
-  color:'#fff',
+  opacity: '0.9',
   ease:Back.easeOut
 });
