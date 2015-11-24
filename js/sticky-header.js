@@ -3,9 +3,9 @@ var stickyHeader = new ScrollMagic.Scene({
   offset: '80',
   duration: '0'
 })
-.setPin(".header--wrapper", {
+.setPin(".nav", {
     //pushFollowers: true
 })
-.addIndicators({name: "sticky-header"}) // add indicators (requires plugin)
+.addIndicators({name: "sticky-nav"}) // add indicators (requires plugin)
 .addTo(controller)
-.setClassToggle(".header--wrapper", 'header--wrapper--sticky')
+.setClassToggle(".nav", 'nav--sticky');

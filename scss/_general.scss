@@ -48,14 +48,6 @@ button {
   color: #b0a377;
 }
 
-.header--wrapper {
-  margin: 0;
-  padding: 1em;
-  background: #fff;
-  text-align: center;
-  z-index: 1001;
-}
-
 .widget {
   padding: 20px 0 60px;
   background: white;
@@ -113,8 +105,17 @@ button.button-prim {
     -ms-backface-visibility: hidden;
 }
 
+.header--wrapper {
+  margin: 0;
+  padding: 1em 0 0;
+  background: #fff;
+  text-align: center;
+}
+
 .nav {
-  padding: 20px 0 0;
+  background: #fff;
+  padding: 20px 0;
+  z-index: 1001;
 }
 
 .nav ul {
