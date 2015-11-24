@@ -136,3 +136,143 @@ button.button-prim {
   height: 500px;
   background: #eee;
 }
+
+.image-wrapper {
+  overflow: hidden;
+}
+
+.scaletate {
+  -webkit-animation: scale-rotate 8s linear infinite;
+     -moz-animation: scale-rotate 8s linear infinite;
+      -ms-animation: scale-rotate 8s linear infinite;
+       -o-animation: scale-rotate 8s linear infinite;
+          animation: scale-rotate 30s linear infinite;
+}
+
+.scaletate-reverse {
+  -webkit-animation: scale-rotate-reverse 8s linear infinite;
+     -moz-animation: scale-rotate-reverse 8s linear infinite;
+      -ms-animation: scale-rotate-reverse 8s linear infinite;
+       -o-animation: scale-rotate-reverse 8s linear infinite;
+          animation: scale-rotate-reverse 30s linear infinite;
+}
+
+@-webkit-keyframes scale-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-moz-keyframes scale-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-ms-keyframes scale-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-o-keyframes scale-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes scale-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-webkit-keyframes scale-rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-moz-keyframes scale-rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-ms-keyframes scale-rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@-o-keyframes scale-rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes scale-rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
