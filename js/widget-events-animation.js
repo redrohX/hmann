@@ -16,7 +16,10 @@ var slide_down_scene = new ScrollMagic.Scene({
     triggerElement: "#trigger-widget4"
 })
 // trigger animation Velocity
-.setTween(".overlay-container-1", 0.5, {alpha: 1, y: 100})
+.setTween(".overlay-container-1", 1, {
+  alpha: 1,
+  y: 350
+})
 .addIndicators({name: "event menu"}) // add indicators (requires plugin)
 .addTo(controller)
 .triggerHook(0.90);
@@ -25,9 +28,9 @@ var slide_up_scene = new ScrollMagic.Scene({
     triggerElement: "#trigger-widget4"
 })
 // trigger animation Velocity
-.setTween(".overlay-container-2", 0.5, {
+.setTween(".overlay-container-2", 1, {
   alpha: 1,
-  y: -100
+  y: -350
 })
 .addIndicators({name: "event menu mirrored"}) // add indicators (requires plugin)
 .addTo(controller)

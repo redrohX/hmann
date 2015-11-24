@@ -35,7 +35,7 @@
 
     .overlay-container-1 {
         background: #fff;
-        top: -100px;
+        top: -350px;
         max-height: 350px;
         position: relative;
 
@@ -109,13 +109,14 @@
     }
 
     .overlay-container-2 {
-        bottom: -100px;
+        bottom: -350px;
         min-height: 350px;
         position: relative;
     }
 
     img {
         width: 100%;
+        max-height: 350px;
     }
 
     .row-2 {
