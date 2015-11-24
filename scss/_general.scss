@@ -121,6 +121,16 @@ button.button-prim {
     }
 }
 
+.lazy-load {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+
+  &.b-loaded {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+}
+
 .footer--wrapper {
   width: 100%;
   height: 500px;

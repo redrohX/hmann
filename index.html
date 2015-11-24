@@ -90,7 +90,7 @@
 
       <div class="widget widget01">
 
-        <div class="widget01--container widget01--container--default" style="background-image: url(images/widget_brand_bigpict.jpg);">
+        <div class="widget01--container widget01--container--default lazy-load" data-src="images/widget_brand_bigpict.jpg">
           <div id="animate1" class="heading-wrapper">
             <span class="widget01--subtitle">Spring</span>
             <h3 class="widget01--header">2017</h3>
@@ -99,8 +99,7 @@
         </div>
 
         <div class="widget01--container widget01--container--more-info">
-          <div id="animate3" class="widget01--block widget01--container--more-info--image">
-            <div data-src="images/widget_brand_look_detail2.jpg"></div>
+          <div id="animate3" class="widget01--block widget01--container--more-info--image lazy-load" data-src="images/widget_brand_look_detail2.jpg">
           </div>
           <div id="trigger2"></div>
           <div class="widget01--block">
@@ -115,7 +114,7 @@
           <div class="slideshow-container">
               <ul class="slideshow">
                 <li>
-                  <div class="widget01--content" style="background-image: url(images/widget_brand_look1.jpg);">
+                  <div class="widget01--content lazy-load" data-src="images/widget_brand_look1.jpg">
                   </div>
                 </li>
                 <li>
@@ -147,7 +146,7 @@
             </div>
           </div>
           <div id="animate4" class="widget01--block widget01--container--cta--image">
-            <div style="background-image: url(images/widget_brand_look_detail.jpg);"></div>
+            <div class="lazy-load" data-src="images/widget_brand_look_detail.jpg"></div>
           </div>
         </div>
       </div>
@@ -155,7 +154,7 @@
       <div id="trigger-widget3" class="spacer s0"></div>
 
       <div class="widget widget-03">
-          <div class="row-1" style="background-image: url(images/widget_events_bigpict.jpg);">
+          <div class="row-1 lazy-load" data-src="images/widget_events_bigpict.jpg">
               <div class="overlay-container">
                   <div class="container-1">
                       <div class="cont">
@@ -197,7 +196,7 @@
                       </div>
                   </div>
                   <div class="container-2">
-                      <img src="images/widget_events_smallpict.jpg"/>
+                      <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/widget_events_smallpict.jpg"/>
                   </div>
               </div>
           </div>
@@ -244,7 +243,7 @@
 
       <div id="trigger-widget4" class="spacer s0"></div>
       <div class="widget widget-04">
-          <div class="row-1" style="background-image: url(images/widget_product_bigpict.jpg);">
+          <div class="row-1 lazy-load" data-src="images/widget_product_bigpict.jpg">
               <div class="overlay">
                   <div class="overlay-container-1">
                       <div class="cont-1">
@@ -265,7 +264,7 @@
 
                   <div class="overlay-container-2">
                       <div class="cont-2">
-                          <img src="images/widget_product_smallpict.jpg"/>
+                          <img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/widget_product_smallpict.jpg"/>
                       </div>
                   </div>
               </div>
@@ -278,6 +277,7 @@
       </div>
   </div>
 
+  <script src="js/blazy-config.js"></script>
   <script src="js/scrollmagic.controller.init.js"></script>
   <script src="js/widget-menu-animation.js"></script>
   <script src="js/widget-events-animation.js"></script>
@@ -285,6 +285,5 @@
   <script src="js/jquery.slideshow.js"></script>
   <script src="js/hamburger-menu.js"></script>
   <script src="js/sticky-header.js"></script>
-
 </body>
 </html>

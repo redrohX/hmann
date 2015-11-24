@@ -6,6 +6,7 @@
       min-height: 350px;
       overflow: hidden;
       background-size: cover;
+      transition: opacity 500ms ease-in-out;
 
       @media only screen and (min-width: 771px) {
         float: left;
@@ -46,23 +47,6 @@
 
         @media only screen and (min-width: 771px) {
           bottom: 40px;
-        }
-      }
-
-      .widget01--container--more-info--image {
-        top: -300px;
-        opacity: 1;
-
-        > div {
-          background-color: #fff;
-          background-size: cover;
-          background-repeat: no-repeat;
-          opacity: 0;
-
-          &.is-visible {
-           opacity: 1;
-           transition: opacity 0.5s ease-in-out;
-         }
         }
       }
     }
@@ -158,6 +142,7 @@
     .widget01--block {
       position: relative;
       min-height: 175px;
+      background-size: cover;
 
       @media only screen and (min-width: 771px) {
         min-height: 350px;

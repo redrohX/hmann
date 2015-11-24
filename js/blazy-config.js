@@ -1,7 +1,10 @@
 lazyLoad = function () {
     var bLazy = new Blazy({
-        container: '.catblocks',
-        selector: 'img',
-        offset: 20
+        selector: '.lazy-load',
+        offset: 120
     });
-}
+};
+
+$(document).ready(function(){
+  lazyLoad();
+});
