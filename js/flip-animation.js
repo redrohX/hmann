@@ -42,7 +42,7 @@ $(document).ready(function($) {
         {
             this.animation.play();
             $(".cont").addClass('flipped');
-            $(".widget-03").find(".button-prim").hide();
+            $(".widget-03").find(".front").find(".button-prim").hide();
         }
 
         $("div.cont.test").find('.close').click(elOut);
