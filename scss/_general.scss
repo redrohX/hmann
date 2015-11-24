@@ -39,7 +39,7 @@ button {
         max-width: 400px;
 
         @media screen and (max-width: 600px) {
-            width: 50%;
+            max-width: 200px;
         }
     }
 }
@@ -110,6 +110,22 @@ button.button-prim {
   padding: 1em 0 0;
   background: #fff;
   text-align: center;
+}
+
+.header--wrapper--sticky .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header--wrapper--sticky .logo {
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.logo {
+  transition: all 0.5s ease;
+  opacity: 1;
 }
 
 .nav {
