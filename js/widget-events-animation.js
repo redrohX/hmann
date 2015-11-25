@@ -20,7 +20,7 @@ var slide_down_scene = new ScrollMagic.Scene({
   alpha: 1,
   y: 350
 })
-.addIndicators({name: "event menu"}) // add indicators (requires plugin)
+//.addIndicators({name: "event menu"}) // add indicators (requires plugin)
 .addTo(controller)
 .triggerHook(0.90);
 
@@ -32,6 +32,6 @@ var slide_up_scene = new ScrollMagic.Scene({
   alpha: 1,
   y: -350
 })
-.addIndicators({name: "event menu mirrored"}) // add indicators (requires plugin)
+//.addIndicators({name: "event menu mirrored"}) // add indicators (requires plugin)
 .addTo(controller)
 .triggerHook(0.40);
